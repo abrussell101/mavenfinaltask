@@ -1,5 +1,107 @@
-header {
+.mavbgc1 {
     background-color: #36414c;
-    height: 69px;
-    width: 1440px;
+    padding: 1rem;
+    height: 5em;
+}
+
+.navfont {
+    font-family: Titillium Web;
+    font-size: 0.75rem;
+    padding-top: rem;
+    color: white;
+    
+}
+/* .cartz {
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 20px;
+
+} */
+
+/* .cartcircle {
+    background-color: aliceblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    float: right;
+} */
+
+.navlist {
+    padding-left: 55em;
+}
+
+/* .navfont1 {
+    background-color: aliceblue;
+    width: 0.5em;
+    height: px;
+    padding-right: 68px;
+    border-radius: 100%;
+    margin-right: 5px;
+    } */
+
+.heading1 {
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 3rem;
+    margin-top: 0px;
+}
+
+.imgalign {
+    text-align: center;
+    /* width: 32.125rem;
+    height: 22.75rem; */
+}
+
+p {
+    font-family: Titillium Web;
+    text-align: center;
+    color: #343d42;    
+}
+
+.cart1 {
+    margin-top: -0.45rem;
+}
+
+.fndmrebtn {
+    background-color: #ffffff;
+    height: 60px;
+    color: white;
+    text-align: center;
+    font-family: Titillium Web;
+    margin-left: 31.25rem;
+    margin-right: 31.25rem;
+
+}
+
+.btnfndmre {
+    background-color: #4a90e2;
+    font-family: Titillium Web;
+    border-radius: 3rem;
+    width: 15rem;
+    text-align: center;
+    color: white;
+    border-color: white;
+    height: 3rem;
+    font-size: 0.8rem;
+}
+
+
+.myButton {
+	background-color:#5b94de;
+	border-radius:42px;
+	border:2px solid #5b9de3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Titillium Web;
+	font-size:14px;
+	padding:11px 76px;
+    text-decoration:none;
+
+} 
+
+.text-align-centre {
+    text-align: center;
 }
