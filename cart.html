@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/css/mainstyles.css">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/mainstyles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/cart.css">
-    <script src="/js/cart.js"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/cart.css">
+
+    
 </head>
 <body>
     <header>
 
         <nav class="navbar navbar-light bg-dark" style="background-color: #36414c;">
     
-          <a class="navbar-brand" href="/index.html">
-            <img src="/images/maven_academy.png" width="80" height="30" alt="">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./images/maven_academy.png" width="80" height="30" alt="">
           </a>
     
     
     
           <ul class="nav justify-content-end">
             <li class="navfont">
-              <a class="nav-link active" href="/index.html" style="color: #ffffff ;">Home</a>
+              <a class="nav-link active" href="./index.html" style="color: #ffffff ;">Home</a>
             </li>
             <li class="navfont">
               <a class="nav-link" href="#" style="color: #ffffff ;">Courses</a>
@@ -35,11 +35,12 @@
               <a class="nav-link" href="#" style="color: #ffffff ;">Contact Us</a>
             </li>
             <li class="navfont">
-              <a class="nav-link" href="/cart.html" style="color: #ffffff ;" id="cart">Cart</a>
+              <a class="nav-link" href="./cart.html" style="color: #ffffff ;" id="cart">Cart</a>
             </li>
-            <li class="navfont1" id="cart-info">
-              <a class="nav-link border rounded-circle p-1 bg-light" href="/cart.html"><img class="cart1" src="/images/whitecart.png"
+            <li class="navfont1 row cart" id="cart-info">
+              <a class="nav-link border rounded-circle p-1 bg-light" href="./cart.html"><img class="carts1" src="./images/whitecart.png"
                   width="25" height="25" alt=""></a>
+                  <span style="color: #4a90e2; font-family: titillium web; margin-top: -0.5rem; margin-right: 1rem;">0</span>
             </li>
     
     
@@ -63,11 +64,11 @@
           <div class="card; shadow p-3 mb-5 bg-white rounded" style="width: auto;">
             <h6 class="card-heading">Become a Full Stack Web Developer </h6>
             <p style="text-align: left;">12 Week Course - In classroom </p>
-            <img src='/images/full-stack-banner.png' class="img-fluid" alt="...">
+            <img src='./images/full-stack-banner.png' class="img-fluid" alt="...">
             <div class="card-body">
               <h5 class="cardtitle">R26,000,00 Excl Vat</h5>
               <p class="card-text"><a href="#" style="color: black; font-family: titillium web;">View Course Details</a></p>
-              <a href="#" class="btn btn-outline-info" style="font-family: titillium web; border-radius: 2rem;">Add to
+              <a href="#" class="btn btn-outline-info add-cart cart1" style="font-family: titillium web; border-radius: 2rem;">Add to
                 Cart</a>
             </div>
           </div>
@@ -77,11 +78,11 @@
           <div class="card; shadow p-3 mb-5 bg-white rounded" style="width: auto;">
             <h6 class="card-heading">Become a Front End Web Developer </h6>
             <p style="text-align: left;">4 Week Course - In classroom </p>
-            <img src="/images/frontend-dev-banner.png" class="img-fluid" alt="...">
+            <img src="./images/frontend-dev-banner.png" class="img-fluid" alt="...">
             <div class="card-body">
-              <h5 class="cardtitle">R26,000,00 Excl Vat</h5>
+              <h5 class="cardtitle">R10,000,00 Excl Vat</h5>
               <p class="card-text"><a href="#" style="color: black; font-family: titillium web;">View Course Details</a></p>
-              <a href="#" class="btn btn-outline-info" style="font-family: titillium web; border-radius: 2rem;">Add to
+              <a href="#" class="btn btn-outline-info add-cart cart2" style="font-family: titillium web; border-radius: 2rem;">Add to
                 Cart</a>
             </div>
           </div>
@@ -91,11 +92,11 @@
           <div class="card; shadow p-3 mb-5 bg-white rounded" style="width: auto;">
             <h6 class="card-heading">Become a Java Spring Boot Developer</h6>
             <p style="text-align: left;">12 Week Course - In classroom </p>
-            <img src="/images/spring-boot-dev2.png" class="img-fluid" alt="...">
+            <img src="./images/spring-boot-dev2.png" class="img-fluid" alt="...">
             <div class="card-body">
-              <h5 class="cardtitle">R26,000,00 Excl Vat</h5>
+              <h5 class="cardtitle">R15,000,00 Excl Vat</h5>
               <p class="card-text"><a href="#" style="color: black; font-family: titillium web;">View Course Details</a></p>
-              <a href="#" class="btn btn-outline-info" style="font-family: titillium web; border-radius: 2rem;">Add to
+              <a href="#" class="btn btn-outline-info add-cart cart3" style="font-family: titillium web; border-radius: 2rem;">Add to
                 Cart</a>
             </div>
           </div>
@@ -105,12 +106,24 @@
     </section>
     
 
+        <div class="products-container">
+            <div class="product-header">
+                <h5 class="product-title">PRODUCT</h5>
+                <h5 class="price">PRICE</h5>
+                <h5 class="quantity">QUANTITY</h5>
+                <h5 class="total">TOTAL</h5>
+            </div>
+            <div class="products">
+
+            </div>
+        </div>
+
 
     <section class="row" style="background-color: #343d42;">
 
         <div class="col-sm-2" style="margin-top: 3rem; margin-left: 2rem;">
           <h6 style="text-align: left; color: #5b9de3; padding-bottom: 1rem;">General</h6>
-          <p style="color: #ffffff; text-align: left;"><a href="/index.html"
+          <p style="color: #ffffff; text-align: left;"><a href="./index.html"
               style="color: #ffffff; font-family: titillium web;">Home</a></p>
           <p style="color: #ffffff; text-align: left;"><a href=""
               style="color: #ffffff; font-family: titillium web;">FAQ</a></p>
@@ -150,17 +163,19 @@
           (Pty) Ltd. </span>
         <div class="btn-group" role="group" aria-label="Basic example">
           <button type="button" class="btn btn-secondary"
-            style="background-color: #5b9de3; margin-right: 1rem; border-radius: 1rem;"><img src="/images/Facebook.png"
+            style="background-color: #5b9de3; margin-right: 1rem; border-radius: 1rem;"><img src="./images/Facebook.png"
               alt="" class="img-fluid" style="width: 25px;"></button>
           <button type="button" class="btn btn-secondary"
-            style="background-color: #5b9de3; margin-right: 1rem; border-radius: 1rem;"><img src="/images/Twitter.png"
+            style="background-color: #5b9de3; margin-right: 1rem; border-radius: 1rem;"><img src="./images/Twitter.png"
               alt="" class="img-fluid" style="width: 25px;"></button>
           <button type="button" class="btn btn-secondary"
-            style="background-color: #5b9de3; margin-right: 1rem; border-radius: 1rem;"><img src="/images/Instagram.png"
+            style="background-color: #5b9de3; margin-right: 1rem; border-radius: 1rem;"><img src="./images/Instagram.png"
               alt="" class="img-fluid" style="width: 25px;"></button>
         </div>
     </nav>
 
-   
+
+    <script src="./js/cart.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
