@@ -103,12 +103,17 @@ function displayCart() {
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
-            <div class='product'>
+            <div class='products'>
                 <ion-icon name="trash"></ion-icon>
-                <img src='./images/${item.tag}.png'>
+                <img src='./images/${item.tag}.png' class='img-fluid'>
                 <span>${item.name}</span>
             </div>
             <div class='price'>${item.price}</div>
+            <div class='quantity'>
+                <ion-icon name="arrow-back"></ion-icon>
+                <span>${item.inCart}</span>
+                <ion-icon name="arrow-forward"></ion-icon>
+            </div>
             `
         })
     }
